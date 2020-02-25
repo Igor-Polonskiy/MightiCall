@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1232px;
+    margin: auto;
+}
+.main_screen {
+   height: 960px;
+   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%);
+
+}
+
