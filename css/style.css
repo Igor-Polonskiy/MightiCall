@@ -2,13 +2,119 @@ body {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1232px;
     margin: auto;
 }
+
 .main_screen {
-   height: 960px;
-   background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%);
+    height: 960px;
+    background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%);
 
 }
 
+.header_nav {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    height: 80px;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.header_nav:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    color: #fff;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+}
+
+.menu_list li {
+    list-style: none;
+    margin-left: 60px;
+}
+
+.menu_link {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.menu_btn {
+    cursor: pointer;
+    background-color: #4C75E6;
+    width: 168px;
+    height: 48px;
+    border: 1px solid #fff;
+    border-radius: 24px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+.menu_btn:hover {
+    background-color: #fff;
+    color:  #4C75E6;
+    font-weight: bold;
+    
+}
+
+@media (max-width: 900px) {
+    .menu_burger {
+        background-color: red;
+        z-index: 99;
+        position: relative;
+        width: 30px;
+        height: 20px;
+
+    }
+
+    .menu_burger:before,
+    .menu_burger:after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: 0;
+    }
+
+    .menu_burger:before {
+        top: 0;
+
+    }
+
+    .menu_burger:after {
+        bottom: 0;
+    }
+
+    .menu_burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        top: 9px;
+    }
+}
