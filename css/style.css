@@ -1,6 +1,15 @@
 body {
+    z-index: -5;
     margin: 0;
     padding: 0;
+    font-family: 'Exo 2';
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 56px;
 }
 
 header {
@@ -71,6 +80,7 @@ header {
     text-decoration: none;
     padding: 0 30px;
 }
+
 .link:hover {
     opacity: 1;
     border-bottom: 1px solid #fff;
@@ -91,6 +101,7 @@ header {
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.05em;
+    margin: 0 0 0 30px;
 
 }
 
@@ -104,9 +115,63 @@ header {
 
 
 .main_screen {
+    z-index: -1;
+    position: relative;
     padding-top: 80px;
     box-sizing: border-box;
     height: 960px;
     background: radial-gradient(52.81% 52.81% at 59.9% 47.19%, #517DF4 0%, #3E68DA 100%);
+}
 
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.circle1 {
+    position: absolute;
+    height: 780px;
+    width: 780px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    left: 50%;
+    bottom: 28px;
+
+}
+
+.circle2 {
+    height: 644px;
+    width: 644px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.circle3 {
+    height: 572px;
+    width: 572px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.main_content {
+    display: flex;
+}
+
+.main_header {
+    color: #fff;
+}
+
+.main_header p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.main_header span {
+    font-weight: bold;
+
+}
+
+.green_text {
+    color: #8FE125;
 }
