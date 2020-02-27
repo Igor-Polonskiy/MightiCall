@@ -2,19 +2,22 @@ body {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     position: absolute;
     top: 0;
     left: 0;
     height: 80px;
     width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
 }
 
 .container {
     max-width: 1232px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .header_nav {
@@ -26,7 +29,7 @@ header{
     position: relative;
     display: flex;
     justify-content: space-between;
-   
+
     height: 80px;
     align-items: center;
     width: 100%;
@@ -38,28 +41,41 @@ header{
 .header_nav:before {
     content: "";
     position: absolute;
-    top:-100%;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
     color: #fff;
 }
 
-.menu_list {
+.nav {
     display: flex;
     align-items: center;
-}
-
-.menu_list li {
-    list-style: none;
-    margin:0 0 0 60px;
+    height: 100%;
 }
 
 .menu_link {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 100%;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
     color: #fff;
     opacity: 0.5;
     text-decoration: none;
+    padding: 0 30px;
 }
+.link:hover {
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+}
+
 
 .menu_btn {
     cursor: pointer;
@@ -75,66 +91,18 @@ header{
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.05em;
+
 }
+
+
 .menu_btn:hover {
     background-color: #fff;
-    color:  #4C75E6;
+    color: #4C75E6;
     font-weight: bold;
-    
+
 }
 
-@media (max-width: 900px) {
-    .menu_burger {
-        z-index: 99;
-        position: relative;
-        width: 30px;
-        height: 20px;
 
-    }
-
-    .menu_burger:before,
-    .menu_burger:after {
-        content: "";
-        background-color: #fff;
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        left: 0;
-    }
-
-    .menu_burger:before {
-        top: 0;
-
-    }
-
-    .menu_burger:after {
-        bottom: 0;
-    }
-
-    .menu_burger span {
-        position: absolute;
-        background-color: #fff;
-        left: 0;
-        width: 30px;
-        height: 2px;
-        top: 9px;
-    }
-    .nav{
-        position: fixed;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-
-    }
-    .menu_list{
-        flex-direction: column;
-        padding: 0;
-    }
-    .menu_list li{
-        margin: 0 0 40px 0;
-    }
-}
 .main_screen {
     padding-top: 80px;
     box-sizing: border-box;
