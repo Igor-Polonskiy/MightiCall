@@ -21,6 +21,17 @@ h2 {
     line-height: 56px;
 }
 
+h5 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    
+}
+p{
+    font-family: 'Open Sans';
+}
+
 header {
     z-index: 1;
     position: absolute;
@@ -35,7 +46,6 @@ header {
 .container {
     max-width: 1232px;
     margin: 0 auto;
-    padding: 0 10px;
     box-sizing: border-box;
 }
 
@@ -220,4 +230,112 @@ header {
     left: 212px;
     bottom: 245px;
 
+}
+
+.whatis h2 {
+    margin: 100px 0 76px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #4C75E6;
+}
+
+.whatis_content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 112px;
+}
+
+.frame {
+    width: 608px;
+}
+
+.frame_img {
+    width: 100%;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FE;
+}
+
+.frame_img img {
+    margin: 0 19px;
+}
+
+.frame_img span {
+    width: 120px;
+    border-bottom: 1px dashed #4C75E6;
+    opacity: 0.5;
+}
+
+.frame_txt {
+    height: 200px;
+    border-bottom: 1px solid rgba(92, 101, 129, 0.15);
+    border-left: 1px solid rgba(92, 101, 129, 0.15);
+    border-right: 1px solid rgba(92, 101, 129, 0.15);
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    line-height: 32px;
+    color: #5C6581;
+}
+
+.frame_txt p {
+    margin: auto;
+    padding: 32px 0 0 0;
+    width: 470px;
+}
+
+.frame_txt span {
+    font-family: Open Sans;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #4C75E6;
+}
+
+.whatare {
+    width: 100%;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    height: 960px;
+}
+
+.whatare h2 {
+    max-width: 950px;
+    padding: 100px 0 86px 0;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.whatare h2 span {
+    font-style: italic;
+    font-weight: bold;
+}
+.whatare_txt{
+    max-width: 433px;
+    color: #fff;
+    margin: 0 0 0 50%;
+}
+.whatare_txt h5{
+    line-height: 32px;
+    margin: 0;
+}
+.whatare_txt p{
+    opacity: 0.7;
+    margin: 16px 0 56px 0;
+}
+.whybuy h2{
+    
+    padding: 100px 0 86px 0;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: #4C75E6;
 }
