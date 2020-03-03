@@ -13,6 +13,14 @@ h1 {
     margin: 0 0 56px 0;
 }
 
+@media (max-width: 769px) {
+    h1 {
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
 h2 {
     font-family: 'Exo 2';
     font-style: normal;
@@ -51,10 +59,18 @@ header {
 
 }
 
+
+
 .container {
     max-width: 1232px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        padding: 0 10px;
+    }
 }
 
 .header_nav {
@@ -81,13 +97,6 @@ header {
     height: 100%;
 }
 
-.menu_link {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    height: 100%;
-}
-
 .link {
     display: flex;
     align-items: center;
@@ -97,6 +106,16 @@ header {
     opacity: 0.5;
     text-decoration: none;
     padding: 0 30px;
+}
+@media (max-width: 871px) {
+    .link {
+        padding: 0 15px;
+    }
+    h1 {
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 .link:hover {
@@ -120,7 +139,6 @@ header {
     line-height: 20px;
     letter-spacing: 0.05em;
     margin: 0 0 0 30px;
-
 }
 
 
@@ -128,7 +146,6 @@ header {
     background-color: #fff;
     color: #4C75E6;
     font-weight: bold;
-
 }
 
 
@@ -146,7 +163,6 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
 }
 
 .circle1 {
@@ -156,7 +172,6 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.12);
     left: 50%;
     bottom: 28px;
-
 }
 
 .circle2 {
@@ -169,11 +184,9 @@ header {
     height: 572px;
     width: 572px;
     background-color: rgba(255, 255, 255, 0.1);
-
 }
 
 .main_content {
-
     position: relative;
     z-index: 20;
 }
@@ -235,7 +248,7 @@ header {
 .main_phonehand {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 80px;
     display: inline-block;
     z-index: 2;
 }
@@ -247,6 +260,8 @@ header {
 
 }
 
+
+
 .whatis h2 {
     margin: 100px 0 76px 0;
     text-transform: uppercase;
@@ -255,13 +270,14 @@ header {
 }
 
 .whatis_content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 112px;
 }
 
 .frame {
-    width: 608px;
+    max-width: 608px;
 }
 
 .frame_img {
@@ -278,7 +294,7 @@ header {
 }
 
 .frame_img span {
-    width: 120px;
+    width: 20%;
     border-bottom: 1px dashed #4C75E6;
     opacity: 0.5;
 }
@@ -300,7 +316,7 @@ header {
 .frame_txt p {
     margin: auto;
     padding: 32px 0 0 0;
-    width: 470px;
+    max-width: 470px;
 }
 
 .frame_txt span {
@@ -371,6 +387,7 @@ header {
 }
 
 .whybuy_frame_img img {
+    display: block;
     margin: 0 24px;
 }
 
@@ -417,6 +434,7 @@ header {
 }
 
 .whybuy_comments {
+    overflow: hidden;
     display: grid;
     grid-gap: 16px;
     grid-template-columns: repeat(4, 1fr);
@@ -579,7 +597,6 @@ header {
 }
 
 .whatdevices_img img {
-
     width: 100%;
 }
 
@@ -594,6 +611,12 @@ header {
     text-transform: uppercase;
     color: #4C75E6;
     position: absolute;
+}
+
+@media (max-width: 1265px) {
+    .capture {
+        display: none;
+    }
 }
 
 .whatdevices_img span {
@@ -635,6 +658,7 @@ header {
 }
 
 .rate {
+    overflow: hidden;
     display: grid;
     grid-gap: 16px;
     grid-template-columns: repeat(4, 1fr);
@@ -763,7 +787,9 @@ header {
     margin-left: 32px;
 }
 
-.footer_menu_right {}
+.footer_menu_right {
+    margin-right: 20px;
+}
 
 .footer_menu_link {
     margin-left: 40px;
@@ -806,19 +832,54 @@ header {
     height: 184px;
     position: relative;
 }
+
 .footer_social .logo {
     position: absolute;
     left: 0;
 }
-.footer_social .logo img{
+
+.footer_social .logo img {
     width: 200px;
 }
+
 .social_icons {
     display: flex;
 }
-.social_icons img{
-    margin:0 8px;
+
+.social_icons img {
+    margin: 0 8px;
 }
+
 .store {
     margin-left: 40px;
+}
+
+.footer_info {
+    background-color: #4C75E6;
+}
+
+.footer_info .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 144px;
+}
+
+.footer_info_link,
+.footer_info_copyrite {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-right: 42px;
+}
+
+.footer_info_link:hover {
+    opacity: 1;
 }
